@@ -48,11 +48,10 @@
 - フック(pre-commit など)を `--no-verify` で回避しない。フックが失敗した場合は原因を修正する。
 - 秘密情報や巨大な生成物(`node_modules/`、ビルド成果物など)をコミットしない。
 
-### 現状の注意点
+### リモートリポジトリ
 
-- 現時点ではこのディレクトリは Git リポジトリとして初期化されておらず、GitHub のリモートも未設定。
-  最初のプッシュの前に、`git init` とリモート(`git remote add origin <URL>`)の設定が必要。
-  リポジトリの作成先や公開範囲(public / private)はユーザーに確認する。
+- リモート: `origin` → https://github.com/shiomiawa/ai-keiei-sanbo.git
+- 初期セットアップ(CLAUDE.md の追加・更新)のみ `main` に直接プッシュした。以降は作業ブランチ経由で進める。
 
 ## 開発コマンド
 
